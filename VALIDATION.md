@@ -1,3 +1,16 @@
+# Validation status — version 2.0.4
+
+## Local checks — 14 October 2026
+
+- Rust formatting, all 13 Rust tests, and Clippy with warnings denied passed with the locked dependency versions.
+- Property-inspector JavaScript syntax and behavior checks and all 22 Python API/package tests passed.
+- Version metadata, HTTP user agent, release helper, and contract expectations are aligned at 2.0.4.
+- The merged dependency changes passed GitHub CI, CodeQL, dependency review, and Cargo audit. The release preparation PR is checked again before tagging.
+- The existing allowed warning for yanked optional chacha20 0.10.1 remains.
+- Live OpenDeck/Homebridge interaction was not retested. Release packages are built for x86_64 and aarch64 and inspected before public publication.
+
+## Previous release validation
+
 # Validation status — version 2.0.3
 
 ## Local checks — 21 September 2026
