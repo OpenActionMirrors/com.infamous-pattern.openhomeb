@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.4 — 2026-10-14
+
+- Update rustls to 0.23.46 and quinn-proto to 0.11.18 to address security advisories.
+- Update log to 0.4.34, tokio to 1.53.2, and openaction to 2.8.0.
+- Preserve existing action identifiers and saved-settings format.
+
 ## 2.0.3 — 2026-09-21
 
 - Updated rustls from 0.23.42 to 0.23.45 to fix RUSTSEC-2026-0285.
