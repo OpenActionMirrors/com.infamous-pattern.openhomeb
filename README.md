@@ -2,7 +2,7 @@
 
 A Linux-native OpenDeck/OpenAction plugin for discovering and controlling accessories exposed by Homebridge Config UI.
 
-**Current version: 2.0.4**
+**Current version: 2.0.5**
 
 ![OpenHomeB overview](docs/screenshots/overview.png)
 
@@ -16,6 +16,8 @@ A Linux-native OpenDeck/OpenAction plugin for discovering and controlling access
 ![OpenHomeB Brightness action](docs/screenshots/brightness-action.png)
 
 </details>
+
+Version 2.0.5 includes maintenance updates to tokio 1.53.3 and serde_json 1.0.154.
 
 Version 2.0.4 updates rustls and quinn-proto to address security advisories, and includes maintenance updates to log, tokio, and openaction. Upgrading is recommended.
 
