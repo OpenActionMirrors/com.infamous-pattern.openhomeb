@@ -1,3 +1,15 @@
+# Validation status — version 2.0.5
+
+## Local checks — 20 October 2026
+
+- Rust formatting, 13 Rust tests, and Clippy with warnings denied passed with locked dependencies.
+- JavaScript syntax/behavior checks and all 22 Python API/package tests passed. Python emitted existing HTTPError cleanup warnings; no tests failed.
+- Version metadata, HTTP user agent, release helper, and contract expectations are aligned at 2.0.5.
+- The combined dependency updates passed GitHub CI, Security Audit, and CodeQL on main. The release preparation PR is checked again before tagging.
+- Live OpenDeck/Homebridge interaction was not retested. Both architecture packages and checksums are verified before public publication.
+
+## Previous release validation
+
 # Validation status — version 2.0.4
 
 ## Local checks — 14 October 2026

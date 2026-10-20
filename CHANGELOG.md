@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.5 — 2026-10-20
+
+- Update tokio from 1.53.2 to 1.53.3.
+- Update serde_json from 1.0.151 to 1.0.154.
+- Preserve existing action identifiers and saved-settings format.
+
 ## 2.0.4 — 2026-10-14
 
 - Update rustls to 0.23.46 and quinn-proto to 0.11.18 to address security advisories.
