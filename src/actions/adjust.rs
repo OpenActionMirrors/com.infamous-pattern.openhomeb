@@ -52,9 +52,7 @@ impl AdjustStateAction {
                     settings.characteristic_type(),
                 )
                 .ok_or_else(|| anyhow::anyhow!(
-                    "selected characteristic is no longer available; service_id='{}', characteristic_uuid='{}', characteristic_type='{}', available=[{}]",
-                    settings.accessory_id(),
-                    settings.characteristic_uuid(),
+                    "selected characteristic is no longer available; characteristic_type='{}', available=[{}]",
                     settings.characteristic_type(),
                     service.available_characteristic_types(),
                 ))?;
@@ -141,9 +139,7 @@ pub async fn refresh_adjust_instance(
                     instance,
                     "Missing\nstate",
                     format!(
-                        "selected characteristic is no longer available; service_id='{}', characteristic_uuid='{}', characteristic_type='{}', available=[{}]",
-                        settings.accessory_id(),
-                        settings.characteristic_uuid(),
+                        "selected characteristic is no longer available; characteristic_type='{}', available=[{}]",
                         settings.characteristic_type(),
                         service.available_characteristic_types(),
                     ),

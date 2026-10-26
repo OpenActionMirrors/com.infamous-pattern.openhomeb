@@ -35,13 +35,7 @@ impl SwitchAction {
         }
 
         let global = self.state.global_settings().await;
-        log::info!(
-            "Switch {}: toggle requested for service_id='{}', characteristic_uuid='{}', characteristic_type='{}'",
-            instance.instance_id,
-            settings.accessory_id(),
-            settings.characteristic_uuid(),
-            settings.characteristic_type(),
-        );
+        log::info!("Switch {}: toggle requested", instance.instance_id,);
 
         let result: Result<SwitchDisplayState> = async {
             // Always query immediately before writing so the inverse is calculated from
@@ -191,9 +185,7 @@ fn selected_switch_characteristic<'a>(
         )
         .ok_or_else(|| {
             SwitchSelectionError::CharacteristicUnavailable(format!(
-                "service_id='{}', characteristic_uuid='{}', characteristic_type='{}', available=[{}]",
-                settings.accessory_id(),
-                settings.characteristic_uuid(),
+                "characteristic_type='{}', available=[{}]",
                 settings.characteristic_type(),
                 service.available_characteristic_types(),
             ))
